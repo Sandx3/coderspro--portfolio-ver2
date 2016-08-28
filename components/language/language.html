@@ -1,0 +1,4 @@
+<label for="changeLang">{{'Language' | translate}}:</label>
+<select name="changeLang" id="changeLang" ng-model="data.chosenLang" ng-change="changeLanguage(data.chosenLang)">
+    <option ng-repeat="option in languageList" value="{{option.code}}">{{option.label}}</option>
+</select>

@@ -1,0 +1,128 @@
+@import '../../assets/styles/_variables.less'; 
+
+/*About me section*/
+
+.about-me-section {
+	background-color: @backgroundSectionColor;
+}
+
+.about-me h3, .interests h3{
+	font-size: @sectionHeadingSize;
+	text-align: center;
+}
+
+.about-me {
+	padding: @aboutTextPadding;
+	margin-left: @offsetCol-2;
+}
+
+/* Circle interests */
+
+.circle-interests {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: @interestsMargin;
+
+	ul {
+		position: absolute;
+		width: 250px;
+		height: 250px;
+		margin: 25px;
+		padding: 0;
+		list-style: none;
+		border-radius: 50%;
+	}
+
+	li {
+		position: absolute;
+		top: -35px;
+		left: -35px;
+		width: 160px;
+		height: 160px;
+		transform-origin:  100% 100%;
+
+		&:nth-child(1) {
+		    transform: rotate(63deg);
+		}
+		&:nth-child(2) {
+		    transform: rotate(135deg);
+		}
+		&:nth-child(3) {
+		    transform: rotate(207deg);
+		}
+		&:nth-child(4) {
+		    transform: rotate(279deg);
+		}
+		&:nth-child(5) {
+		    transform: rotate(351deg);
+		}
+
+		&:nth-child(1) div{
+		    transform: rotate(-63deg);
+		    background-image: url('../images/cat.jpg');
+		}
+		&:nth-child(2) div{
+		    transform: rotate(225deg);
+		    background-image: url('../images/cooking.jpeg');
+		}
+		&:nth-child(3) div{
+		    transform: rotate(153deg);
+		    background-image: url('../images/reading.jpg');
+		}
+		&:nth-child(4) div{
+		    transform: rotate(81deg);
+		    background-image: url('../images/movies.jpeg');
+		}
+		&:nth-child(5) div{
+		    transform: rotate(9deg);
+		    background-image: url('../images/coding.jpg');
+		}
+		
+		div {
+			position: absolute;
+			bottom: 0;
+			right: @circleDistance;
+			height: @circleSize;
+			width: @circleSize;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			background-position: center;
+			background-size: cover;
+			border-radius: 50%;
+			border: 1px solid #e6e6e6;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+
+			span {
+				display: none;
+				text-align: center;
+				margin: 0 auto;
+			}
+
+			&:hover span,
+			&:focus span {
+				display: block;
+				z-index: 400;
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background:rgba(0,0,0,0.6);
+			    opacity: 0;
+			    transition: opacity 0.5s;
+			}
+
+			&:hover:before,
+			&:focus:before {
+				opacity: 1;
+			}
+		}
+	}
+}

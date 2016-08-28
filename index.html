@@ -3,96 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sandra Ptaszek</title>
+	<title>My Page - Sandra Ptaszek</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="lib/angular-scroll.min.js"></script>
+    <script type="text/javascript" src="lib/lodash.min.js"></script>
+	<script type="text/javascript" src="lib/angular-gettext.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/translations.js"></script>
+	<script type="text/javascript" src="js/Factories/Factories.js"></script>
+	<script type="text/javascript" src="js/Directives/directives.js"></script>
+
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Dancing+Script' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="styles/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="styles/grid.css">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="styles/mobile.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/mobile.css">
 </head>
-<body>
+<body ng-app="myApp">
 	<header>
-		<section class="row nav">
-			<div class="col-3 col-ms-5 col-mm-5 col-ml-5 col-t-5">
-				<h1>Sandra Ptaszek</h1>
-			</div>
-		<!-- START MAIN NAVIGATION -->
-			<nav class="col-9 col-ms-7 col-mm-7 col-ml-7 col-t-7">
-				<ul>
-					<li>
-						<a href="#about-me">About Me</a>
-					</li>
-					<li>
-						<a href="#skills">Skills</a>
-					</li>
-					<li>
-						<a href="#portfolio">Portfolio</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		<!-- END MAIN NAVIGATION -->
-		</section>
-		<!-- START HAMBURGER MENU FOR MOBILES -->
-		<section>
-			<input type="checkbox" class="checkbox" id="checkbox" />
-			<label class="fa fa-bars hamburger-menu" aria-hidden="true" for="checkbox"></label>
-			<ul class="mobile-menu">
-				<li>
-					<a href="#about-me">About Me</a>
-				</li>
-				<li>
-					<a href="#skills">Skills</a>
-				</li>
-				<li>
-					<a href="#portfolio">Portfolio</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-				</ul>
-		</section>
-		<!-- END HAMBURGER MENU FOR MOBILES -->
+		<menu-nav></menu-nav>
 	</header>
 	<main>
-		<section class="row">
-			<div class="welcome-section col-12">
-				<div class="row intro-section">
-					<img class="greeting-photo col-2 col-offset-4" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=180%C3%97300&w=180&h=300" alt="Sandra Ptaszek">
-					<div class="col-2 intro-text">
-						<h2>Hi! My name is</h2> <h2>Sandra</h2>
-						<p>I'm a <span>junior web developer</span></p>
-						<p>and a <span>future frontend developer!</span></p>
-					</div>
-				</div>
-			</div>
+		<section>
+			<intro-section></intro-section>
+ 		</section>
+		<section id="about-me" class="about-me-section">
+			<aboutme-section></aboutme-section>
 		</section>
-		<section class="about-me-section">
-			<div class="row">
-				<div class="about-me col-4 col-offset-2">
-					<h3>About me</h3>
-					<p>My name is Sandra and I'm 24 years old. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quidem, nam. Odit amet libero deleniti doloribus alias numquam possimus, ipsum quam hic praesentium laboriosam eius totam repellat nisi eum tempore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odio veritatis saepe architecto pariatur eos fugit vel molestiae, itaque laboriosam eveniet, illo fuga rerum, temporibus corporis explicabo, sit iusto autem!</p>
-				</div>
-				<div class="interests col-4">
-					<h3>Interests</h3>
-					<div class="circle-interests">
-						<div class="center"></div>
-						<ul>
-							<li><div><span>Animals</span></div></li>
-							<li><div><span>Cooking</span></div></li>
-							<li><div><span>Reading</span></div></li>
-							<li><div><span>Watching movies</span></div></li>
-							<li><div><span>Coding, especially CSS</span></div></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<section id="skills" class="skills-section">
+			<skills-section></skills-section>
+		</section>
+		<section id="portfolio" class="portfolio-section">
+			<portfolio-section></portfolio-section>
 		</section>
 	</main>
-	<footer>
-		
+	<footer id="contact" class="contact-section">
+		<contact-section></contact-section>
 	</footer>
 </body>
 </html>

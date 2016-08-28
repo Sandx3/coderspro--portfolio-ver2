@@ -1,0 +1,61 @@
+@import '../../assets/styles/_variables.less';
+
+/*   NAV   */
+.nav {
+	position: fixed;
+	z-index: 500;
+	width: @fullWidth;
+	background-color: @mainColor;
+	box-shadow: @shadowsBoxes;
+}
+
+h1 {
+	margin: 0;
+	padding: 15px;
+	font-family: @headerFont; 
+	color: @headerColor;
+}
+
+nav {
+
+	ul {
+		margin: 0px;
+		padding: 15px;
+		width: @fullWidth;
+		list-style: none;
+		text-align: right;
+
+		li {
+			display: inline-block;
+
+			a {
+				padding: 10px;
+				text-decoration: none;
+				text-shadow: @shadowFonts;
+				color: @fontColor;
+
+				&:hover {
+					color: @decoColor;
+					transition: color 0.5s;
+				}
+			}
+		}
+	}
+}
+
+.mobile-menu {
+	transition: opacity 0.4s ease-out;
+    opacity: 0; 
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.checkbox {
+	display: none;
+	transition: all 0.5s;
+}
+
+.hamburger-menu{
+	display: none;
+}

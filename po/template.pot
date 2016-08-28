@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: components/nav/nav.html:33
+#: components/nav/nav.html:9
+msgid "About Me"
+msgstr ""
+
+#: components/nav/nav.html:18
+#: components/nav/nav.html:42
+msgid "Contact"
+msgstr ""
+
+#: components/intro/intro.html:8
+msgid "Hi! My name is"
+msgstr ""
+
+#: components/intro/intro.html:9
+msgid "I'm a"
+msgstr ""
+
+#: components/language/language.html:1
+msgid "Language"
+msgstr ""
+
+#: js/Directives/directives.js:84
+msgid "My Page - Sandra Ptaszek"
+msgstr ""
+
+#: components/nav/nav.html:15
+#: components/nav/nav.html:39
+msgid "Portfolio"
+msgstr ""
+
+#: components/nav/nav.html:12
+#: components/nav/nav.html:36
+msgid "Skills"
+msgstr ""
+
+#: components/intro/intro.html:10
+msgid "and a"
+msgstr ""
+
+#: components/intro/intro.html:10
+msgid "future frontend developer!"
+msgstr ""
+
+#: components/intro/intro.html:9
+msgid "junior web developer"
+msgstr ""
